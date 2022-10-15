@@ -13,8 +13,8 @@ tabloda bulunan ancak ikinci tabloda bulunmayan verileri sıralayalım.
 Cevaplar
 1. select first_name from actor union select first_name from customer
 2. select first_name from actor intersect select first_name from customer
-3. select actor.first_name from actor left join customer on customer.first_name = actor.first_name
+3. select actor.first_name from actor except all select customer.first_name from customer
 4. a. select distinct first_name from actor union select first_name from customer
    b. select distinct first_name from actor intersect select first_name from customer
-   c. select distinct actor.first_name from actor left join customer on customer.first_name = actor.first_name
+   c. select actor.first_name from actor except select customer.first_name from customer
 
